@@ -1,0 +1,222 @@
+:root {
+  --background-color: #121212;
+  --text-color: #ffffff;
+  --secondary-text-color: #8e8e8e;
+  --card-background-color: #1c1b1b09;
+  --button-background-color: #852fee;
+  --button-hover-background-color: #8353e3;
+  --secondary-color: #2fee85;
+  --border-color: #44185f29;
+  --input-background-color: #33333333;
+  --input-text-color: #ffffff;
+  --font-family: 'Arial', sans-serif;
+  --avatar-size: 100px;
+  --button-padding: 10px 20px;
+  --container-padding: 20px;
+  --container-margin: 20px auto;
+  --border-radius: 8px;
+  --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.home-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 400px;
+}
+
+.home img {
+  width: 200px;
+  margin-left: 60px;
+}
+
+.home form {
+  background-color: var(--card-background-color);
+  padding: var(--container-padding);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+.home input[type='text'] {
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  background-color: var(--input-background-color);
+  color: var(--input-text-color);
+  text-align: center;
+}
+
+.home input[type='submit'] {
+  padding: var(--button-padding);
+  background-color: var(--button-background-color);
+  color: var(--text-color);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.home input[type='submit']:hover {
+  background-color: var(--button-hover-background-color);
+}
+
+.user-page {
+  width: 680px;
+  margin: var(--container-margin);
+  padding: var(--container-padding);
+  background-color: var(--card-background-color);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.user-info img {
+  border-radius: 50%;
+  width: var(--avatar-size);
+  height: var(--avatar-size);
+  border: 3px solid var(--button-background-color);
+}
+
+.user-info h1 {
+  margin: 10px 0;
+  font-size: 26px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.user-info p {
+  margin: 5px 0;
+  color: var(--secondary-color);
+  text-align: center;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  width: 500px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.stats div {
+  width: 20%;
+  text-align: center;
+}
+
+.stats p {
+  margin: 10px;
+  text-align: center;
+  color: var(--button-background-color);
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.repos {
+  margin-top: 20px;
+}
+
+.repos .flex {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--card-background-color);
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid var(--border-color);
+}
+
+.repos .flex div {
+  max-width: 70%;
+}
+
+.repos .flex a {
+  color: var(--secondary-color);
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.repos .flex a:hover {
+  text-decoration: underline;
+}
+
+.repos .flex p {
+  margin: 5px 0;
+}
+
+button {
+  padding: var(--button-padding);
+  background-color: var(--button-background-color);
+  color: var(--text-color);
+  width: 140px;
+  height: 40px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: var(--text-color);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background-color: var(--button-hover-background-color);
+}
+
+span {
+  color: var(--text-color);
+  letter-spacing: 0.4px;
+}
+
+.back-btn {
+  width: 40px;
+  height: 40px;
+  background-color: var(--button-background-color);
+  color: var(--text-color);
+  position: sticky;
+  top: 30px;
+  left: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+p.date  {
+  color: var(--secondary-text-color);
+  font-size: 13px;
+}
+
+.repo:hover {
+  background-color: var(--input-background-color);
+}
