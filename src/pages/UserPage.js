@@ -32,7 +32,7 @@ function UserPage() {
       };
       fetchData();
     }
-  }, [login, userData]);
+  }, [login, userData, repos]);
 
   const gotoGH = () => {
     window.location.href = userData.html_url;

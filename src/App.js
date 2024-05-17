@@ -1,5 +1,4 @@
-import { Route, Routes, Switch } from 'react-router-dom';
-import { useState, useEffect } from 'react';
+import { Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import UserPage from './pages/UserPage';
 
